@@ -4,6 +4,11 @@
     background-color: #ffdfb8;
 }
 
+h1{
+    text-align: center;
+    margin: 3px;
+}
+
 .container{
     /* border: 7px solid #000000; */
    margin: 12px;
@@ -25,20 +30,23 @@
     //margin: 12px;
     height: 100px;
     min-width: 100px;
-    flex-grow: 1;
+   // flex-grow: 1;
 }
 
 .one{
    /* border: 2px solid #010c88; */
    background:  #d30606;
+   flex-grow: 2;
 }
 
 .two{
     /* border: 2px solid #ff5a07; */
     background: #ff5a07;
+    flex-grow: 3;
 }
 
 .three{
     /* border: 2px solid #c70098; */
     background: #c70098;
+    flex-grow: 1;
 }
