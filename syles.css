@@ -1,52 +1,74 @@
-*{
-    padding: 0;
-    margin: 0;
-    background-color: #ffdfb8;
-}
-
-h1{
-    text-align: center;
-    margin: 3px;
-}
-
-.container{
-    /* border: 7px solid #000000; */
-   margin: 12px;
    /**
+   *    -    =====  NOTES   =============
+   *
    * display: flex; 
    * align-items: center;
    * justify-content: center;
    * text-align: center;
-   */
-   height: 500px;
+   *
+   ** Flex-grow -> determines the way an element grows
+   *  flex-grow: 1;
+   *  If all elements have flex-grow set to 1, they will each take up an equal amount of space.
+   *  If one has a higher value than another, it will take up more space.
+   * 
+   ** Flex-shrink -> determines how much the element can shrink in response to available space
+   *  flex-shrink: 1;
+   *  The default is 0 if unset. Elements with a flex-shrink property set to 0 do not shrink
+   *  and become fixed in size.
+   *
+   ** Flex-wrap : 
+   * flex-wrap allows you to properly distribute space in a container, making it easier to create responsive layouts
+   * The flex-wrap property specifies whether the flexible items should wrap or not.
+   *! NOTE: If the elements are not flexible items, the flex-wrap property has no effect.
+
+   *
+   * border: 2px solid #ff5a07; 
+   *
+   * */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+   margin: 0 auto;
 }
 
 .flex-container{
     background: #ffff;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box{
-    //margin: 12px;
     height: 100px;
-    min-width: 100px;
-   // flex-grow: 1;
+    width: 200px;
+    flex-grow: 1;
 }
 
 .one{
-   /* border: 2px solid #010c88; */
    background:  #d30606;
-   flex-grow: 2;
+   /* flex-grow: 2; 
+   flex-shrink: 1; */
+
 }
 
 .two{
-    /* border: 2px solid #ff5a07; */
     background: #ff5a07;
-    flex-grow: 3;
+    /* flex-grow: 3; 
+    flex-shrink: 2; */ 
 }
 
 .three{
-    /* border: 2px solid #c70098; */
     background: #c70098;
-    flex-grow: 1;
+    /* flex-grow: 1; 
+    flex-shrink: 3; */
+
 }
