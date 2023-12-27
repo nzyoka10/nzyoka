@@ -44,7 +44,8 @@ h1{
 .flex-container{
     background: #ffff;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  Opposite of below - wraps to bottom*/
+    flex-wrap: wrap-reverse; /* wraps to top/ upwards */
 }
 
 .box{
