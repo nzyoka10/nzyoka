@@ -69,4 +69,5 @@ console.log("Js Datatypes")
         console.log("Hello, Eric!")
     }
     msg();
-    console.log(typeof msg)
+    console.log(typeof msg);
+    
