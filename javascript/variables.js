@@ -1,6 +1,6 @@
 // JavaScript variables assignment
-const tit = "JavaScript variables assignment: Below.";
-console.log(tit);
+const title = "JavaScript variables assignment: Below.";
+console.log(title);
 
 // code: Add 2 numbers together
     console.log(23 +97);
@@ -22,5 +22,10 @@ console.log(tit);
     let b = 7 * a;
     console.log(b);
 
-    
+// Question 5
+    const MAX = 57;
+    const actual = MAX - 13;
+    const percentage = actual / MAX;
+
+    console.log(percentage);
 
