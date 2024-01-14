@@ -23,11 +23,13 @@
 
    *
    * border: 2px solid #ff5a07; 
+    * flex-wrap: wrap;  Opposite of below - wraps to bottom
+    * flex-wrap: nowrap; default option
    *
    * */
 
 *{
-    padding: 0;
+    font-family: verdana;
     margin: 0;
 }
 
@@ -43,14 +45,13 @@ h1{
 
 .flex-container{
     background: #ffff;
-    display: flex;
-    /* flex-wrap: wrap;  Opposite of below - wraps to bottom*/
+    display: flex;  
     flex-wrap: wrap-reverse; /* wraps to top/ upwards */
 }
 
 .box{
     height: 100px;
-    width: 200px;
+    min-width: 200px;
     flex-grow: 1;
 }
 
