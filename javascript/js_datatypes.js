@@ -24,7 +24,7 @@ console.log("Js Datatypes")
     console.log(num2);
     console.log(typeof num)
 
-// Boolean datatype - true or false
+//^ Boolean datatype - true or false
     let learning = true;
     let completed = false; 
     let k = 4 > 7;
