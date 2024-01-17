@@ -82,60 +82,22 @@ console.log("JS Comparisons!")
     console.log(x == null); // true
     console.log(x === null); // false
 
-// JavaScript if, else, and else if
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**
  * Single quotes, double quotes, and backticks
  * In JavaScript, you can choose single quotes ('), double quotes ("), or backticks (`) to wrap your strings in. All of the following will work:
- */
-const single = 'Single quotes';
-const double = "Double quotes";
-const backtick = `Backtick`;
+*/
+    const single = 'Single quotes';
+    const double = "Double quotes";
+    const backtick = `Backtick`;
 
-//console.log(single);
-//console.log(double);
-//console.log(backtick);
+    console.log(single);
+    console.log(double);
+    console.log(backtick);
+
+// 
 
 
 
 
-/**
- * Hour
- * if hour is between 6am and 12pm: Good morning!
- * if between 12pm and 6pm: Good afternoon!
- * otherwise: Good evening!
- * 
- */
-
-let hour = 10;
 
