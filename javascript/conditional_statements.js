@@ -47,7 +47,7 @@
             //alert(greeting);
             console.log(greeting)
         }
-        
+
 
 /**
  * ^ Task.
@@ -60,11 +60,11 @@
 
     let hour = 19;
     //~ let hour: be 24 hour-clock
-        if (hour >= 6 && hour <= 12) 
+        if (hour >= 6 && hour < 12) 
         {
             console.log("Morning user!");
         }
-        else if ( hour > 12 && hour <= 18)
+        else if ( hour >= 12 && hour < 18)
         {
             console.log("Afternoon user!")
         }
