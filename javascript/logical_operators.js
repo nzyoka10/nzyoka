@@ -74,3 +74,15 @@ let hour = 8;
 
    // alert( alert(1) && alert(2) );
    //console.log( 1 && 2 );
+
+   let shoppingDone = false;
+    let childsAllowance;
+
+    if (shoppingDone === true) 
+    {
+        childsAllowance = 10;
+    } 
+    else 
+    {
+        childsAllowance = 5;
+    }
