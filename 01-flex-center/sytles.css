@@ -1,8 +1,8 @@
 .container {
-    background: dodgerblue;
-    border: 4px solid midnightblue;
-    width: 400px;
-    height: 300px;
+    background: #0683d7;
+    border: 7px solid midnightblue;
+    width: 700px;
+    height: 500px;
   }
   
   .box {
@@ -10,12 +10,29 @@
     font-weight: bold;
     text-align: center;
     border: 6px solid maroon;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+   //color: #ff5e00;
   }
 
   .container{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .container p{
+    text-align: center;
+    padding: 18px;
+    color: aliceblue;
+    text-transform: capitalize;
+    text-decoration: underline #0683d7;
+  }
+
+  p:hover{
+    color: blueviolet;
+    background-color: aliceblue;
+    text-decoration: none;
+    
   }
