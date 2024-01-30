@@ -51,3 +51,47 @@
     // using the return value, to get output
     let multiply_sum = multiply(3, 5);
     console.log(multiply_sum);
+
+//! ----------  Function Scope  ---------
+    // types of scopes 
+    // namely:- global scope, local scope and block scope
+
+//~ Global Scope:
+    //~   in global scope variables can be accessed anywhere inthe code
+    let globalVar = "global variable. I can be ACCESSED anywhere in the code!";
+    console.log(globalVar);
+
+//^ Local Scope: 
+    //^  ONLY accessed within where it is defined
+    //~ example 1
+        function localScope()
+        {
+            let local = "Local scope (variable). I can be accessed ONLY inside this function.";
+            console.log(local);
+        }
+        localScope();
+    //~ example 2
+        function calculate()
+        {
+            let k = 10; 
+            console.log(k);
+        }
+        calculate(); //* Outputs: 10
+       // console.log(k); //! ERROR: variable k is not defined (outside the function scope)
+
+//& Block Scope
+        // It is used in conditional statements and loops, so thses are only accessed within that block
+        //It is used in conditional statements and loops, so thses are only accessed within that block
+        if(true){
+            let blockVar = "Block variable. I can be accessed only within this block"
+            console.log(blockVar);
+        }
+
+//Now in order to test the above statements consider the following example.
+//In the following example only the globalVar is will print the message
+    function testing(){
+        console.log(globalVar)
+        console.log(calculate)
+        console.log(blockVar)
+    }
+    testing()
