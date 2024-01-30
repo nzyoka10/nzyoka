@@ -1,8 +1,18 @@
-//^ Java script functions
-    //* ====== Example 1=======================
+//  
+//^ Java script functions :: a set of statements that performs a task or calculates a value
+//****************
+
+// Example of a function
+    function square(number) {
+        return number * number;
+    }
+    let input = 52;
+    console.log(`The square of ${input} is ${square(input)}`);
+
+//* ====== Example 1=======================
     function sayHi()
     {
-        console.log("Hello, Js functions!");
+        console.log("Hello, Js is fun!");
     }
     // calling the function
     sayHi();
@@ -19,6 +29,9 @@
 //* Defining and Invoking Functions:
     // A function is a reusable block of code that performs a specific task.
     //We'll learn how to define functions using the function keyword and how to invoke (call) them when needed.
+
+
+    
     //! function definition
     function greet(name){
         console.log("Hello, " + name + "!");
