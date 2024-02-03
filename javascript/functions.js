@@ -92,6 +92,42 @@
     function testing(){
         console.log(globalVar)
         console.log(calculate)
-        console.log(blockVar)
+        //console.log(blockVar)
     }
     testing()
+
+    function favoriteAnimal(animal) {
+        return animal + " is my favorite animal!"
+      }
+    
+      console.log(favoriteAnimal('Goat'))
+
+      function showMessage() {
+        alert( 'Hello everyone!' );
+      }
+      
+      showMessage();
+//showMessage();
+/**
+ * Local variables
+    A variable declared inside a function is only visible inside that function.
+    For example:
+        function showMessage() {
+            let message = "Hello, I'm JavaScript!"; // local variable
+            alert( message );
+        }
+    showMessage(); // Hello, I'm JavaScript!
+    alert( message ); // <-- Error! The variable is local to the function
+
+*/
+
+//^    Outer variables
+    //      A function can access an outer variable as well, for example:
+    var userName = "Nzyoka";
+        function showMessage() 
+        {
+            let message = "Hello, " + userName;
+            alert(message);
+        }
+        //userName = "Nzyoka";
+        showMessage(userName); // to output: Hello, nzyoka
