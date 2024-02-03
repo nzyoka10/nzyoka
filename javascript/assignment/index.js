@@ -1,5 +1,25 @@
 //alert("Hello Eric!");
 //console.log(23 + 9);
+//~ function greet()
+    function greet()
+    {
+        console.log("Hello, JavaScript!");
+    }
+greet();
+
+//& Parameters and Arguments
+    //** Parameters :: are the variables that are declared in the function definition
+            // ** firstName and lastName are the parameters
+    //^  Arguments :: are values that are passed to the function when called.
+            // ^ firstName and lastName = "Eric Nzyoka"; are arguments passed to the function greet1()
+    // Example
+    function greet1(firstName, lastName) 
+    {
+        console.log("Hello " + firstName + " " + lastName);
+    }
+greet1("Eric", "Nzyoka");
+
+//^  ____--------=====0------___ Assignment starts here ____--------=====0------___
 /**
  ** write function called add7
  *@add : function add, take number
@@ -13,6 +33,15 @@
         console.log(num+7)
     }
     add7();
+
+    //** Return function  */
+    //~ Example 2:
+    function add(i, j)
+    {
+        return i + j;
+    }
+    let sum = add(4, 7);
+    console.log("Sum if i and j is ::--> " + sum);
 
 /**
  ** Write a function called multiply that takes 2 numbers and returns their product.
@@ -32,6 +61,13 @@
         console.log("\n ");       
     }
     multiply (10, 5);
+
+    //~  --------   Example 2   ------    
+    function multiply1(a, b)
+    {
+        console.log(a * b); 
+    }
+    multiply1(4,9);
 
 /**
  * function capitalize
