@@ -70,8 +70,44 @@ greet1("Eric", "Nzyoka");
     multiply1(4,9);
 
 /**
+ * * Capitalize the First Letter of Multiple Strings
  * function capitalize
  * takes a string and returns  that string, with ONLY 
  * * the first letter capitalized
+ * ~ Capitalize the first letter
  * 
  */
+
+
+
+
+
+function capitalize(string) 
+{
+    //return string.charAt(0).toUpperCase();
+    console.log(string.charAt(0).toUpperCase());
+}
+capitalize("eric");
+
+//var string = ("eric");
+//console.log(string);
+
+/**
+ * *    function to return the last letter of a string
+ * * @param {String} string
+ * @return {String} The last character in the string
+ * @
+ * end!
+ */
+function lastLetter(str) 
+{
+    // lastLetter ("abcd") should return "d"
+    console.log(str.slice(-1)); 
+}
+lastLetter("abcd"); //~ Output :: "d"
+lastLetter("nzyoka"); //~ Output :: "a"
+
+
+
+"Problem solving is writing an original program that performs a particular set of tasks and meets all stated constraints.
+- Think Like a Programmer"
