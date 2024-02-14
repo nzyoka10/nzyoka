@@ -44,8 +44,8 @@ console.log("\n");
         { name: "Mobile", price: 200 },
         { name: "Bike", price: 100 },
         { name: "Tv", price: 10 },
-        { name: "Book", price: 7 },
-        { name: "Tv", price: 1000 },
+        { name: "Biker", price: 17 },
+        { name: "Car", price: 1000 },
         { name: "Book", price: 700 }
     ];
     console.log(items);
@@ -67,6 +67,12 @@ console.log("\n");
         return item.price
     });
     console.log('Item prices only', itemPrices);
+
+    //~ print single item 
+    const foundItems = items.find((item) => {
+        return item.name == "Book"
+    });
+    console.log('Find item --> Book', foundItems);
 
 
 
