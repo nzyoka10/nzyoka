@@ -116,6 +116,149 @@ console.log("\n================================");
         console.log(myCounter());
         console.log(myCounter());
         console.log(myCounter());
+    
+        console.log("\t Example 2 on Js closure!");
+    //& Example 2
+        function outer(y)
+        {
+            // nested function
+            function inner(z)
+            {
+                return y + z;
+            }
+            return inner;
+        }
+        const outerReturn = outer(4);
+        console.log(outerReturn(15));   // returns 19
+        console.log(outerReturn(23));  // returns 27
+        console.log(outerReturn(35));  // returns 39
+        console.log(outerReturn(46));   // returns 50
+        console.log(outerReturn(59));  // returns 63
+        console.log(outerReturn(69)); // returns 73
+    
+    //& Example 3 on closure
+        // Outer function
+        function outerT() 
+        {
+	        function create_Closure(val) 
+            {
+		        return function ()
+                {
+			        return val;
+		        }
+            }
 
+	    let arr = [];
+	    let i;
+
+	    for (i = 0; i < 4; i++) 
+        {
+		    arr[i] = create_Closure(i);
+	    }
+
+	    return arr;
+    }
+    let get_arr = outerT();
+    console.log("\t\n");
+    console.log(get_arr[0]());
+    console.log(get_arr[1]());
+    console.log(get_arr[2]());
+    console.log(get_arr[3]());
+
+//  console.log(get_arr[4]()) - Error! Because there is no index 4 in the array. 
+
+//^  ---- Call Back function
+         //? what is call back function? --> 
+         // is a function that is passed as an argument to another function (CALL BACK)
+         // A callback function is executed at some point in the future, when some operation has completed
+
+    //* example of call back function:
+    console.log("------ Call Back function -------");
+
+        function greet(name)
+        {
+            // `greet()` function is passed as an argument to `setTimeout` function
+            // then the setTimeout function the waits for 2seconds before returning executing greet() function
+
+            console.log("\t\n Hello, " + name);
+        }
+        setTimeout(greet, 200, "Eric Nzyoka");
+    
+    //* Example 2
+        // the addEventListener method :: 
+        // this method takes a callback function as an argument, which is executed when a specific event occurs
+        //* document.getElementById('myButton').addEventListener("click", alert('Button clicked!'));
+    
+    //& ------   Example 3  ----
+        // in Js functions are first class citizens
+        function foo(bar)
+        {
+            bar();
+        }
+            foo(function()
+            {
+                console.log('\n Bar!.......');
+            });
         
+        // callback based on condition
+        function addT7(sum)
+        {
+            if(isNight)
+            {
+                sum();
+            }
+
+            if(isDrinksOverCheckOnline)
+            {
+                sum();
+            }
+        }
+
+console.log("\n");
+
+//^   ------    HOF - High Order Function   -----
+    console.log("\n HOF - High Order Function.");
+        // what is HOF?
+            //~ 1. takes one or more functions as argument
+            //~ 2. It may return a function
+            //! NOTE ::: -->  HOF and CALLBACK are not the same/ or equivalent
+
+        //& Example 1
+        function getCapture(camera)
+        {
+            // camera() is a function
+            camera();
+        }
+        getCapture(function()
+        {
+            console.log('Canon');
+        })
+
+    //& Example 2 :: function return another function
+        function returnFn()
+        {
+            return function()
+            {
+                console.log('Returning!.......');
+            }
+        }
+        const fn = returnFn();
+        fn();
+
+//^ ---- Pure functions ----
+        // functions that git same output as input given
+    function sayGreeting(name)
+    {
+        return `Hola, ${name}`;
+    }
+    sayGreeting('Nzyoka');
+    console.log(sayGreeting("Nzyoka!"));
+
+
+
+
+
+
+
+
 
