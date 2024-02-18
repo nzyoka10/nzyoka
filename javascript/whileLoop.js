@@ -24,8 +24,8 @@
 console.log(text);
 
 console.log("\nExample 2 using  (while loop): in js  "); 
-let myNum = 5;
-while(myNum >= 1)
+let myNum = 59;
+while(myNum >= 14)
 {
     console.log("myNum is :--> " +myNum);
     myNum++;
